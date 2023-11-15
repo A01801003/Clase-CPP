@@ -14,13 +14,15 @@ class Jugador
         void cambia_posicion(int n);
 
     public:
-
+        Jugador(); // Constructor por default (sin parámetros)
+        Jugador(int n, string m); // Constructor que incorpora un string y un entero
+        
+        ~Jugador(); // Destructor de jugador
+        
         int get_posicion();
         void set_nombre(string n);
         void imprimir();
         void mover();
 
 };
-
-
-#endif
+#endif 
